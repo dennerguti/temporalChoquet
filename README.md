@@ -13,7 +13,7 @@ The equations below describe the mathematical structure behind the **Choquet com
 
 The weight distribution is designed so that the sum always equals **1**, ensuring that each analysis remains normalized, concise, and accurate. These formulations enable the systematic evaluation of performance, adaptability, and robustness across models.
 
-Furthermore, they provide a reproducible and transparent framework for all stages — from data collection to model application — allowing researchers to interpret and compare the results in a consistent way. Ultimately, these equations serve as the theoretical and analytical foundation for assessing the Choquet models’ performance across different temporal conditions.
+Furthermore, they provide a reproducible and transparent framework for all stages, from data collection to model application, allowing researchers to interpret and compare the results in a consistent way. Ultimately, these equations serve as the theoretical and analytical foundation for assessing the Choquet models’ performance across different temporal conditions.
 
 ---
 
