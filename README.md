@@ -15,119 +15,135 @@ The weight distribution is designed so that the sum always equals **1**, ensurin
 
 Furthermore, they provide a reproducible and transparent framework for all stages, from data collection to model application, allowing researchers to interpret and compare the results in a consistent way. Ultimately, these equations serve as the theoretical and analytical foundation for assessing the Choquet models’ performance across different temporal conditions.
 
+
 ---
 
 ## I. T-Norms
 
-### Minimum  
-<p align="center"><code>T<sub>M</sub>(x, y) = min{x, y}</code></p>
+### Minimum
+$$
+T_M(x, y) = \min\{x, y\}
+$$
 
-### Algebraic Product  
-<p align="center"><code>T<sub>P</sub>(x, y) = xy</code></p>
+### Algebraic Product
+$$
+T_P(x, y) = xy
+$$
 
-### Łukasiewicz  
-<p align="center"><code>T<sub>L</sub>(x, y) = max{0, x + y − 1}</code></p>
+### Łukasiewicz
+$$
+T_L(x, y) = \max\{0, x + y - 1\}
+$$
 
-### Hamacher Product  
-<p align="center">
-
+### Hamacher Product
 $$
 T_{HP}(x, y) =
 \begin{cases}
 0, & \text{if } x = y = 0 \\
-\frac{xy}{x + y - xy}, & \text{otherwise}
+\dfrac{xy}{x + y - xy}, & \text{otherwise}
 \end{cases}
 $$
-</p>
 
 ---
 
 ## II. Overlap Functions
 
 ### OB(x, y)
-<p align="center"><code>OB(x, y) = min{x√y, y√x}</code></p>
+$$
+OB(x, y) = \min\{x\sqrt{y},\, y\sqrt{x}\}
+$$
 
-### Cuadras-Augé Copula  
-<p align="center"><code>O<sub>mM</sub>(x, y) = min{x, y}·max{x², y²}</code></p>
+### Cuadras-Augé Copula
+$$
+O_{mM}(x, y) = \min\{x, y\} \cdot \max\{x^2, y^2\}
+$$
 
-### Oα(x, y)
-<p align="center"><code>O<sub>α</sub>(x, y) = xy(1 + α(1 − x)(1 − y)),  α ∈ [−1, 1]</code></p>
+### \( O_{\alpha}(x, y) \)
+$$
+O_{\alpha}(x, y) = xy \big(1 + \alpha(1 - x)(1 - y)\big), \quad \alpha \in [-1, 1]
+$$
 
 ### ODiv(x, y)
-<p align="center"><code>O<sub>Div</sub>(x, y) = (xy + min{x, y}) / 2</code></p>
+$$
+O_{Div}(x, y) = \frac{xy + \min\{x, y\}}{2}
+$$
 
-### Geometric Mean  
-<p align="center"><code>GM(x, y) = √(xy)</code></p>
+### Geometric Mean
+$$
+GM(x, y) = \sqrt{xy}
+$$
 
-### Harmonic Mean  
-<p align="center">
-
+### Harmonic Mean
 $$
 H_S(x, y) =
 \begin{cases}
 0, & \text{if } x = y = 0 \\
-\frac{2}{\frac{1}{x} + \frac{1}{y}}, & \text{otherwise}
+\dfrac{2}{\dfrac{1}{x} + \dfrac{1}{y}}, & \text{otherwise}
 \end{cases}
 $$
-</p>
 
-### Sine  
-<p align="center"><code>Sine(x, y) = (π / 2)·(xy)^(1/4)</code></p>
+### Sine
+$$
+Sine(x, y) = \frac{\pi}{2} \, (xy)^{\frac{1}{4}}
+$$
 
-### ORS  
-<p align="center"><code>ORS(x, y) = min{ ((x + 1)√y) / 2, y√x }</code></p>
+### ORS
+$$
+ORS(x, y) = \min\left( \frac{(x + 1)\sqrt{y}}{2},\, y\sqrt{x} \right)
+$$
+
+
 
 ---
 
 ## III. Copulas That Are Neither T-Norms Nor Overlap Functions
 
 ### CF(x, y)
-<p align="center"><code>CF(x, y) = xy + x²y(1 − x)(1 − y)</code></p>
+$$
+CF(x, y) = xy + x^2 y (1 - x)(1 - y)
+$$
 
 ### CL(x, y)
-<p align="center"><code>CL(x, y) = max{ min{x, y/2}, x + y + 1 }</code></p>
+$$
+CL(x, y) = \max\left( \min\left(x, \frac{y}{2}\right), x + y + 1 \right)
+$$
+
 
 ---
 
 ## IV. Aggregation Functions Other Than (I)–(III)
 
 ### FGL(x, y)
-<p align="center"><code>FGL(x, y) = √( x(y + 1) / 2 )</code></p>
+$$
+FGL(x, y) = \sqrt{ \frac{x(y + 1)}{2} }
+$$
 
 ### FBPC(x, y)
-<p align="center"><code>FBPC(x, y) = xy²</code></p>
+$$
+FBPC(x, y) = xy^2
+$$
 
 ---
 
 ## V. Left 0-Absorbent (0,1)-Pre-Aggregation Functions
 
 ### FNA(x, y)
-<p align="center">
-
 $$
 FNA(x, y) =
 \begin{cases}
-x, & \text{if } x ≤ y \\
-min(x, y), & \text{otherwise}
+x, & \text{if } x \le y \\
+\min(x, y), & \text{otherwise}
 \end{cases}
 $$
-</p>
 
 ### FNA₂(x, y)
-<p align="center">
-
 $$
-FNA₂(x, y) =
+FNA_2(x, y) =
 \begin{cases}
-x, & \text{if } x ≤ y \\
-\frac{x(y + 1)}{2}, & \text{if } 0 < x ≤ y \\
-min(x, y), & \text{otherwise}
+x, & \text{if } x \le y \\
+\dfrac{x(y + 1)}{2}, & \text{if } 0 < x \le y \\
+\min(x, y), & \text{otherwise}
 \end{cases}
 $$
-</p>
 
 ---
-
-## Citation
-
-If you use or reference these formulations, please cite this repository and acknowledge the Choquet comparative framework in your work.
