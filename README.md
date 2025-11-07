@@ -15,14 +15,11 @@ The weight distribution is designed so that the sum always equals **1**, ensurin
 
 Furthermore, they provide a reproducible and transparent framework for all stages, from data collection to model application, allowing researchers to interpret and compare the results in a consistent way. Ultimately, these equations serve as the theoretical and analytical foundation for assessing the Choquet models’ performance across different temporal conditions.
 
-
----
-
 ## I. T-Norms
 
 ### Minimum
 $$
-T_M(x, y) = \min\{x, y\}
+T_M(x, y) = \min(x, y)
 $$
 
 ### Algebraic Product
@@ -32,7 +29,7 @@ $$
 
 ### Łukasiewicz
 $$
-T_L(x, y) = \max\{0, x + y - 1\}
+T_L(x, y) = \max(0, x + y - 1)
 $$
 
 ### Hamacher Product
@@ -50,12 +47,12 @@ $$
 
 ### OB(x, y)
 $$
-OB(x, y) = \min\{x\sqrt{y},\, y\sqrt{x}\}
+OB(x, y) = \min(x\sqrt{y},\, y\sqrt{x})
 $$
 
 ### Cuadras-Augé Copula
 $$
-O_{mM}(x, y) = \min\{x, y\} \cdot \max\{x^2, y^2\}
+O_{mM}(x, y) = \min(x, y) \cdot \max(x^2, y^2)
 $$
 
 ### \( O_{\alpha}(x, y) \)
@@ -65,7 +62,7 @@ $$
 
 ### ODiv(x, y)
 $$
-O_{Div}(x, y) = \frac{xy + \min\{x, y\}}{2}
+O_{Div}(x, y) = \frac{xy + \min(x, y)}{2}
 $$
 
 ### Geometric Mean
@@ -92,8 +89,6 @@ $$
 ORS(x, y) = \min\left( \frac{(x + 1)\sqrt{y}}{2},\, y\sqrt{x} \right)
 $$
 
-
-
 ---
 
 ## III. Copulas That Are Neither T-Norms Nor Overlap Functions
@@ -105,9 +100,8 @@ $$
 
 ### CL(x, y)
 $$
-CL(x, y) = \max\left( \min\left(x, \frac{y}{2}\right), x + y + 1 \right)
+CL(x, y) = \max\left( \min\left(x, \frac{y}{2}\right),\, x + y + 1 \right)
 $$
-
 
 ---
 
@@ -145,5 +139,3 @@ x, & \text{if } x \le y \\
 \min(x, y), & \text{otherwise}
 \end{cases}
 $$
-
----
